@@ -1,3 +1,93 @@
-h1 {
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.header {
     color: red;
 }
+
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#content {
+    background-image: url(./shawarma.jpeg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    gap: 30px;
+    border-bottom: 2px solid #c59d5f;
+}
+
+button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    border-bottom: 2px solid #c59d5f;
+    padding-bottom: 3px;
+}
+
+main {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.welcome {
+    font-size: 96px;
+    color: #c59d5f;
+    font-weight: 500;
+}
+
+.shawarma-hub {
+    font-size: 64px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: -40px;
+    border-bottom: solid 4px #c59d5f;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.main-text {
+    font-weight: 500;
+}
+
+footer {
+    flex-grow: 0;
+    height: 100px;
+    border-top: 2px solid #c59d5f;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
