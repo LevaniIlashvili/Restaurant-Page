@@ -2,6 +2,7 @@
 import Shawarma from './shawarmamenu.jpg';
 import Hotdog from './hotdog.jpeg';
 import Fries from './fries.jpg';
+import Burger from './burger.jpeg';
 
 function menuPage() {
     const main = document.querySelector('main');
@@ -40,6 +41,17 @@ function menuPage() {
     const friesPrice = document.createElement('h5');
     friesPrice.textContent = 'Fries 3$';
     menuCardThird.appendChild(friesPrice);
+    // fourth
+    const menuCardFourth = document.createElement('div');
+    menuCardFourth.classList.add('menu-card');
+    menuBackground.appendChild(menuCardFourth);
+    const burger = new Image();
+    burger.src = Burger;
+    burger.classList.add('burger');
+    menuCardFourth.appendChild(burger);
+    const burgerPrice = document.createElement('h5');
+    burgerPrice.textContent = 'Burger $5';
+    menuCardFourth.appendChild(burgerPrice);
 }
 
 export { menuPage } 

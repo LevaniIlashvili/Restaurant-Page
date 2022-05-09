@@ -1,6 +1,7 @@
 import { mainPage, homePage } from "./main-page";
 import './style.css';
 import { menuPage } from "./menu-page";
+import { contactPage } from "./contact-page";
 
 mainPage();
 
@@ -27,6 +28,7 @@ menu.addEventListener('click', () => {
 
 contact.addEventListener('click', () => {
     removeAllChildNodes(main);
+    contactPage();
 });
 
 
